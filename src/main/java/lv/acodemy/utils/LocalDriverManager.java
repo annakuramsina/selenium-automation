@@ -1,3 +1,4 @@
+
 package lv.acodemy.utils;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,5 +12,11 @@ public class LocalDriverManager {
             driver.set(new ChromeDriver());
         }
         return driver.get();
+    }
+
+    public static void closeDriver() {
+        driver.get().close();
+        driver.get().quit();
+        driver.set(null);
     }
 }

@@ -8,7 +8,6 @@ public class MainPage {
 
     ChromeDriver driver = LocalDriverManager.getInstance();
 
-
     private final By addStudentButton = By.id("addStudentButton");
 
     public void openAddStudentForm() {
